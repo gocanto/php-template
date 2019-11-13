@@ -1,6 +1,9 @@
 <?php
+
+declare(strict_types=1);
+
 /*
- * This file is part of the Gocanto Converter
+ * This file is part of the Gocanto Template Package
  *
  * (c) Gustavo Ocanto <gustavoocanto@gmail.com>
  *
@@ -10,10 +13,18 @@
 
 namespace Gocanto\Converter\Tests;
 
-use Mockery;
+use Gocanto\MyTemplate\Example;
 use PHPUnit\Framework\TestCase;
 
 class ExampleTest extends TestCase
 {
-    //
+    /**
+     * @test
+     */
+    public function itDoesntWork()
+    {
+        $example = new Example;
+
+        $this->assertEquals('Gustavo Ocanto', $example->getAuthor());
+    }
 }
