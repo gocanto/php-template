@@ -1,4 +1,5 @@
-## My personal flavoured PHP packages template.
+## About it
+<a href="https://github.com/gocanto/php-template/actions"><img src="https://github.com/gocanto/php-template/workflows/build/badge.svg" alt="Build status"></a>
 
 This repository contains my personal flavoured PHP bootstrapping packages template.
 

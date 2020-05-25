@@ -1,37 +1,38 @@
 {
-  "license": "MIT",
   "name": "gocanto/php-template",
-  "homepage": "https://github.com/gocanto/php-template",
   "type": "php-bundle",
   "description": "Personal flavor for PHP packages template.",
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "keywords": [
     "php",
     "packages",
     "template"
   ],
+  "homepage": "https://github.com/gocanto/php-template",
+  "license": "MIT",
   "authors": [
     {
       "name": "Gustavo Ocanto",
       "email": "gustavoocanto@gmail.com"
     }
   ],
-  "support": {
-    "source": "https://github.com/gocanto/php-template",
-    "issues": "https://github.com/gocanto/php-template/issues"
-  },
   "require": {
-      "php": "^7.4"
+    "php": "^7.4"
   },
   "require-dev": {
-      "friendsofphp/php-cs-fixer": "^2.16",
-      "mockery/mockery": "^1.0.0",
-      "phpmd/phpmd": "^2.0.0",
-      "phpunit/phpunit": "^9.0.0",
-      "roave/security-advisories": "dev-master",
-      "squizlabs/php_codesniffer": "^3.0.0",
-      "vimeo/psalm": "^3.0.0"
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "mockery/mockery": "^1.0.0",
+    "phpmd/phpmd": "^2.0.0",
+    "phpunit/phpunit": "^9.0.0",
+    "roave/security-advisories": "dev-master",
+    "squizlabs/php_codesniffer": "^3.0.0",
+    "vimeo/psalm": "^3.0.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
   },
   "autoload": {
     "psr-4": {
@@ -43,25 +44,24 @@
       "Gocanto\\MyTemplate\\Tests\\": "tests"
     }
   },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": {
-            "*": "dist"
-        },
-        "sort-packages": true
-    },
-    "scripts": {
-        "analysis": [
-            "./vendor/bin/psalm --output-format=compact --show-info=false"
-        ],
-        "coverage": [
-            "php vendor/bin/phpunit --testsuite=Unit --coverage-html=public/coverage --colors=always"
-        ],
-        "fix-style": [
-            "./vendor/bin/php-cs-fixer fix . --config=.php_cs"
-        ],
-        "test": [
-            "php vendor/bin/phpunit --testsuite=Unit --colors=always"
-        ]
-    }
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "analysis": [
+      "./vendor/bin/psalm --output-format=compact --show-info=false"
+    ],
+    "coverage": [
+      "php vendor/bin/phpunit --testsuite=Unit --coverage-html=public/coverage --colors=always"
+    ],
+    "fix-style": [
+      "./vendor/bin/php-cs-fixer fix . --config=.php_cs"
+    ],
+    "test": [
+      "php vendor/bin/phpunit --testsuite=Unit --colors=always"
+    ]
+  },
+  "support": {
+    "issues": "https://github.com/gocanto/php-template/issues",
+    "source": "https://github.com/gocanto/php-template"
+  }
 }
