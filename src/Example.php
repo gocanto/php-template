@@ -18,7 +18,7 @@ class Example
     /**
      * @return string
      */
-    public function getAuthor() : string
+    public function getAuthor(): string
     {
         return 'Gustavo Ocanto';
     }

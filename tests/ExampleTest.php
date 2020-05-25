@@ -23,7 +23,7 @@ class ExampleTest extends TestCase
      */
     public function itDoesntWork()
     {
-        $example = new Example;
+        $example = new Example();
 
         $this->assertEquals('Gustavo Ocanto', $example->getAuthor());
     }
