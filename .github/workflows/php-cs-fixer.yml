@@ -15,7 +15,7 @@ jobs:
 
             - name: Apply fixes
               run: |
-                  composer require require hirak/prestissimo --dev
+                  composer global require hirak/prestissimo
                   composer require friendsofphp/php-cs-fixer --dev
                   composer fix-style
 
