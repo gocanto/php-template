@@ -11,7 +11,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Gocanto\Converter\Tests;
+namespace Gocanto\MyTemplate\Tests;
 
 use Gocanto\MyTemplate\Example;
 use PHPUnit\Framework\TestCase;
@@ -21,7 +21,7 @@ class ExampleTest extends TestCase
     /**
      * @test
      */
-    public function itDoesntWork()
+    public function itDoesntWork(): void
     {
         $example = new Example();
 
